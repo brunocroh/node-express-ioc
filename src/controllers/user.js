@@ -1,7 +1,7 @@
-module.exports = (app) => {
-  console.log("load user module");
+const app = require("../config/express");
 
-  app.get("/user", function (_, res) {
-    res.send("Hello World");
-  });
-};
+console.log("load user module");
+
+app.get("/user", function (_, res) {
+  res.send("Hello World");
+});

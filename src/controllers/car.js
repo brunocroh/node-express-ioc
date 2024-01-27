@@ -1,7 +1,7 @@
-module.exports = (app) => {
-  console.log("load car module");
+const app = require("../config/express");
 
-  app.get("/car", function (_, res) {
-    res.send("CarModule/Hello World");
-  });
-};
+console.log("load car module");
+
+app.get("/car", function (_, res) {
+  res.send("CarModule/Hello World");
+});
